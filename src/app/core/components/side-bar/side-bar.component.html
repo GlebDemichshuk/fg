@@ -1,0 +1,85 @@
+<nz-sider
+  nzWidth="300px"
+  nzCollapsible
+  [(nzCollapsed)]="isCollapsed"
+  [nzCollapsedWidth]="0"
+  class="side-bar"
+>
+  <div class="side-bar_header">
+    <div class="side-bar_block"></div>
+  </div>
+
+  <div class="side-bar_content">
+    <ul nz-menu nzTheme="dark" nzMode="inline" class="side-bar_nav">
+      <li nz-menu-item class="side-bar_nav-item">
+        <a class="side-bar_nav-link">
+          <div class="side-bar_nav-icon_circle">
+            <span
+              nz-icon
+              nzType="user"
+              nzTheme="outline"
+              class="side-bar_nav-icon"
+            ></span>
+          </div>
+          <span>Профиль</span>
+        </a>
+      </li>
+      <li nz-menu-item class="side-bar_nav-item">
+        <a class="side-bar_nav-link">
+          <div class="side-bar_nav-icon_square">
+            <span
+              nz-icon
+              nzType="codepen"
+              nzTheme="outline"
+              class="side-bar_nav-icon"
+            ></span>
+          </div>
+          <span>Проекты</span>
+        </a>
+      </li>
+      <li nz-menu-item class="side-bar_nav-item">
+        <a class="side-bar_nav-link">
+          <div class="side-bar_nav-icon_circle">
+            <span
+              nz-icon
+              nzType="team"
+              nzTheme="outline"
+              class="side-bar_nav-icon"
+            ></span>
+          </div>
+          <span>База сотрудников</span>
+        </a>
+      </li>
+      <li nz-menu-item class="side-bar_nav-item">
+        <a class="side-bar_nav-link">
+          <div class="side-bar_nav-icon_square">
+            <span
+              nz-icon
+              nzType="book"
+              nzTheme="outline"
+              class="side-bar_nav-icon"
+            ></span>
+          </div>
+          <span>База знаний о клиентах</span>
+        </a>
+      </li>
+    </ul>
+    <div class="side-bar_block"></div>
+  </div>
+
+  <div class="side-bar_footer">
+    <div class="side-bar_footer-role">
+      <p>{{ name }}</p>
+      <p>{{ position }}</p>
+    </div>
+    <button class="side-bar_footer-logout" (click)="logout()">
+      <div class="side-bar_nav-icon_rectangle"></div>
+      <span
+        nz-icon
+        nzType="arrow-right"
+        nzTheme="outline"
+        class="side-bar_footer-logout_icon"
+      ></span>
+    </button>
+  </div>
+</nz-sider>

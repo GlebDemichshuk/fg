@@ -1,0 +1,159 @@
+.ant-layout-sider-children {
+  display: flex;
+}
+.side-bar {
+  width: 300px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #212426;
+}
+
+.side-bar_header {
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  background: none;
+}
+
+.side-bar_header-btn {
+  font-size: 25px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: white;
+}
+
+.side-bar_header-btn:hover {
+  color: #1890ff;
+}
+
+.side-bar_block {
+  width: 100%;
+  height: 40px;
+
+  background: black;
+}
+
+.side-bar_content .side-bar_block {
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+
+.side-bar_nav {
+  padding: 10px;
+
+  margin-top: 40px;
+
+  background: none;
+
+  border-right: none;
+}
+
+.side-bar_nav-item {
+  color: #c8cddb;
+}
+
+.side-bar_nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-bar_nav-icon {
+  color: #686a6b;
+  font-size: 20px;
+}
+
+.side-bar_nav-icon_circle,
+.side-bar_nav-icon_square {
+  width: 28px;
+  height: 28px;
+
+  margin-right: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-bar_nav-icon_circle {
+  border: solid 2px white;
+  border-radius: 50%;
+}
+
+.side-bar_nav-icon_square {
+  border: solid 2px white;
+  border-radius: 2px;
+}
+
+.side-bar_footer {
+  width: 100%;
+
+  padding: 60px 10px 10px 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #c8cddb;
+}
+
+.side-bar_footer-role p {
+  color: #c8cddb;
+}
+
+.side-bar_footer-role p:first-child {
+  color: #c8cddb;
+  font-weight: 700;
+}
+
+.side-bar_footer-logout {
+  width: 20px;
+  height: 30px;
+  background: transparent;
+  margin-right: 10px;
+
+  border: solid 2px white;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+.side-bar_footer-logout:before {
+  content: '';
+  position: absolute;
+  right: -10px;
+  width: 10px;
+  height: 14px;
+  background: #212426;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.side-bar_footer-logout_icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: #686a6b;
+  font-size: 15px;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.side-bar_nav-icon_rectangle {
+  position: relative;
+}
